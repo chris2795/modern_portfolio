@@ -1,0 +1,204 @@
+//Widescreens
+@include mediaXL {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+//Desktops and Laptops
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+//Tablets and Small Laptops
+@include mediaMd {
+    main {
+        align-items: center;
+        text-align: center;
+
+        .lg-heading{
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    }
+    .menu{
+        ul.menu-nav,
+        div.menu-branding {
+            float: none;
+            width: 100%;
+            min-height: 0;
+
+            &.show {
+                transform: translate3d(0,0,0);
+            }
+        }
+        .menu-nav {
+            height: 75vh;
+            transform: translate3d(-100%, 0, 0);
+            font-size: 24px;
+        }
+        .menu-branding{
+            height: 25vh;
+            transform: translate3d(100%, 0, 0);
+
+            .portrait {
+                background: url('../img/img_profile.jpg');
+                width: 130px;
+                height: 130px;
+               
+            }
+        }
+    }
+
+    //about
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-columns: 1fr;
+    }
+    main#about h1{
+        font-size: 5rem;
+        margin-top: 5vh;
+      
+
+    }
+
+    //work.html grid
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main#work h1{
+        font-size: 5rem;
+        margin-top: 5vh;
+    }
+    main#work h2{
+        font-size: 1.5rem;
+       
+    }
+
+}
+
+//Smartphones
+@include mediaSm {
+    main {
+        align-items: center;
+        text-align: center;
+
+        .lg-heading{
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    }
+    .menu{
+        ul.menu-nav,
+        div.menu-branding {
+            float: none;
+            width: 100%;
+            min-height: 0;
+
+            &.show {
+                transform: translate3d(0,0,0);
+            }
+        }
+        .menu-nav {
+            height: 75vh;
+            transform: translate3d(-100%, 0, 0);
+            font-size: 24px;
+        }
+        .menu-branding{
+            height: 25vh;
+            transform: translate3d(100%, 0, 0);
+
+            .portrait {
+                background: url('../img/img_profile.jpg');
+                width: 130px;
+                height: 130px;
+               
+            }
+        }
+    }
+
+    //home page -small size
+    header {
+        margin-right: 5em;
+    }
+    main#home h1 {
+        margin-top: 10vh;
+        font-size: 5rem;
+        align-self: center;
+    }
+
+
+    //about - infor small size
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-columns: 1fr;
+    }
+    main#about h1{
+        font-size: 3rem;
+        margin-top: 5vh;
+    
+    }
+    main#about h2{
+        font-size: 1rem;
+       
+    }
+    main#about h3{
+        font-size: 2rem;
+       
+    }
+    main#about p{
+        font-size: 1rem;
+       
+    }
+
+
+
+    //mywork - small size
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main#work h1{
+        font-size: 3rem;
+        margin-top: 5vh;
+    }
+    main#work h2{
+        font-size: 1rem;
+       
+    }
+
+
+    //contact
+    main#contact h1{
+        font-size: 3rem;
+        margin-top: 5vh;
+    }
+    main#contact h2{
+        font-size: 1rem;
+        
+    }
+    
+        main#contact div{
+            padding: 0.5rem 0.5rem;
+            text-size-adjust: auto;
+            
+            align-items: center;
+        
+        }
+    
+
+}
